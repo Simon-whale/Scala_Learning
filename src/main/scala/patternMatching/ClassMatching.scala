@@ -11,6 +11,7 @@ object ClassMatching extends App {
         s"You got an SMS from $number! Message: $message"
       case VoiceRecording(name, link) =>
         s"You received a Voice Recording from $name!  Click the link to hear it: $link"
+      case _ => "Nothing to see here people"
     }
   }
 
